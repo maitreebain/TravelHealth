@@ -14,6 +14,8 @@
 		80465ABF25A185E50074A8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80465ABE25A185E50074A8A4 /* Assets.xcassets */; };
 		80465AC225A185E50074A8A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80465AC025A185E50074A8A4 /* LaunchScreen.storyboard */; };
 		80465ACD25A185E50074A8A4 /* TravelHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465ACC25A185E50074A8A4 /* TravelHealthTests.swift */; };
+		80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1225AEAF980085CE44 /* CovidAPI.swift */; };
+		80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */; };
 		80C5DD2A25A5739300BCD450 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DD2925A5739300BCD450 /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		80465AC825A185E50074A8A4 /* TravelHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465ACC25A185E50074A8A4 /* TravelHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHealthTests.swift; sourceTree = "<group>"; };
 		80465ACE25A185E50074A8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80969B1225AEAF980085CE44 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
+		80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationAPI.swift; sourceTree = "<group>"; };
 		80C5DD2925A5739300BCD450 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,8 @@
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
 				80465AB925A185E40074A8A4 /* ViewController.swift */,
 				80C5DD2925A5739300BCD450 /* MainTabViewController.swift */,
+				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
+				80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
 				80465ABE25A185E50074A8A4 /* Assets.xcassets */,
 				80465AC025A185E50074A8A4 /* LaunchScreen.storyboard */,
@@ -203,9 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */,
 				80465ABA25A185E40074A8A4 /* ViewController.swift in Sources */,
 				80C5DD2A25A5739300BCD450 /* MainTabViewController.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
+				80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */,
 				80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
