@@ -10,14 +10,15 @@
 		80257D0E25B6972A0022E19E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80257D0D25B6972A0022E19E /* MapViewController.swift */; };
 		80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB525A185E40074A8A4 /* AppDelegate.swift */; };
 		80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB725A185E40074A8A4 /* SceneDelegate.swift */; };
-		80465ABA25A185E40074A8A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB925A185E40074A8A4 /* ViewController.swift */; };
+		80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB925A185E40074A8A4 /* ImmunizationController.swift */; };
 		80465ABD25A185E40074A8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80465ABB25A185E40074A8A4 /* Main.storyboard */; };
 		80465ABF25A185E50074A8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80465ABE25A185E50074A8A4 /* Assets.xcassets */; };
 		80465AC225A185E50074A8A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80465AC025A185E50074A8A4 /* LaunchScreen.storyboard */; };
 		80465ACD25A185E50074A8A4 /* TravelHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465ACC25A185E50074A8A4 /* TravelHealthTests.swift */; };
+		807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */; };
+		807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7425BFAE9000DCE9FA /* EditViewController.swift */; };
 		80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1225AEAF980085CE44 /* CovidAPI.swift */; };
 		80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */; };
-		80C5DD2A25A5739300BCD450 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DD2925A5739300BCD450 /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 		80465AB225A185E40074A8A4 /* TravelHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465AB525A185E40074A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80465AB725A185E40074A8A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80465AB925A185E40074A8A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80465AB925A185E40074A8A4 /* ImmunizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationController.swift; sourceTree = "<group>"; };
 		80465ABC25A185E40074A8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80465ABE25A185E50074A8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80465AC125A185E50074A8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,9 +44,10 @@
 		80465AC825A185E50074A8A4 /* TravelHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465ACC25A185E50074A8A4 /* TravelHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHealthTests.swift; sourceTree = "<group>"; };
 		80465ACE25A185E50074A8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		807F3F7425BFAE9000DCE9FA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		80969B1225AEAF980085CE44 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
 		80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationAPI.swift; sourceTree = "<group>"; };
-		80C5DD2925A5739300BCD450 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +91,10 @@
 			children = (
 				80465AB525A185E40074A8A4 /* AppDelegate.swift */,
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
-				80465AB925A185E40074A8A4 /* ViewController.swift */,
-				80C5DD2925A5739300BCD450 /* MainTabViewController.swift */,
-				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
-				80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */,
-				80257D0D25B6972A0022E19E /* MapViewController.swift */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
+				807F3F7225BFAE5000DCE9FA /* ImmunizationSection */,
+				807F3F6F25BFADA700DCE9FA /* CovidSection */,
+				807F3F7325BFAE5F00DCE9FA /* PlacesSection */,
 				80465ABE25A185E50074A8A4 /* Assets.xcassets */,
 				80465AC025A185E50074A8A4 /* LaunchScreen.storyboard */,
 				80465AC325A185E50074A8A4 /* Info.plist */,
@@ -109,6 +109,33 @@
 				80465ACE25A185E50074A8A4 /* Info.plist */,
 			);
 			path = TravelHealthTests;
+			sourceTree = "<group>";
+		};
+		807F3F6F25BFADA700DCE9FA /* CovidSection */ = {
+			isa = PBXGroup;
+			children = (
+				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
+				80257D0D25B6972A0022E19E /* MapViewController.swift */,
+			);
+			path = CovidSection;
+			sourceTree = "<group>";
+		};
+		807F3F7225BFAE5000DCE9FA /* ImmunizationSection */ = {
+			isa = PBXGroup;
+			children = (
+				80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */,
+				80465AB925A185E40074A8A4 /* ImmunizationController.swift */,
+				807F3F7425BFAE9000DCE9FA /* EditViewController.swift */,
+			);
+			path = ImmunizationSection;
+			sourceTree = "<group>";
+		};
+		807F3F7325BFAE5F00DCE9FA /* PlacesSection */ = {
+			isa = PBXGroup;
+			children = (
+				807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */,
+			);
+			path = PlacesSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */,
 				80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */,
-				80465ABA25A185E40074A8A4 /* ViewController.swift in Sources */,
-				80C5DD2A25A5739300BCD450 /* MainTabViewController.swift in Sources */,
+				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,
+				80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
 				80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */,
 				80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */,

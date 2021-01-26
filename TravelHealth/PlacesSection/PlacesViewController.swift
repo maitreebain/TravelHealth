@@ -1,14 +1,14 @@
 //
-//  MainTabViewController.swift
+//  PlacesViewController.swift
 //  TravelHealth
 //
-//  Created by Maitree Bain on 1/5/21.
+//  Created by Maitree Bain on 1/25/21.
 //  Copyright © 2021 Maitree Bain. All rights reserved.
 //
 
 import UIKit
 
-class MainTabViewController: UITabBarController {
+class PlacesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
