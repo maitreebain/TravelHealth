@@ -1,0 +1,6 @@
+framework module Pods_TravelHealthTests {
+  umbrella header "Pods-TravelHealthTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
