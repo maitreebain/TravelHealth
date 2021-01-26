@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2621EA0710D0FAA3F65DC18A /* Pods_TravelHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE5CBECF16E8CAB74382840 /* Pods_TravelHealthTests.framework */; };
 		5E4D7BEBEE30746FE0841869 /* Pods_TravelHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D38D77E9A8F2923B1CEA236 /* Pods_TravelHealth.framework */; };
+		8024FA8B25C08FA500F2B072 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */; };
 		80257D0E25B6972A0022E19E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80257D0D25B6972A0022E19E /* MapViewController.swift */; };
 		80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB525A185E40074A8A4 /* AppDelegate.swift */; };
 		80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB725A185E40074A8A4 /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		3EBDC01F5BDD14992C30C850 /* Pods-TravelHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealthTests.debug.xcconfig"; path = "Target Support Files/Pods-TravelHealthTests/Pods-TravelHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D38D77E9A8F2923B1CEA236 /* Pods_TravelHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A57EB7DB6DB028873954BD3 /* Pods-TravelHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealthTests.release.xcconfig"; path = "Target Support Files/Pods-TravelHealthTests/Pods-TravelHealthTests.release.xcconfig"; sourceTree = "<group>"; };
+		8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		80257D0D25B6972A0022E19E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		80465AB225A185E40074A8A4 /* TravelHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465AB525A185E40074A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
 				807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */,
+				8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */,
 				807F3F7225BFAE5000DCE9FA /* ImmunizationSection */,
 				807F3F6F25BFADA700DCE9FA /* CovidSection */,
 				807F3F7325BFAE5F00DCE9FA /* PlacesSection */,
@@ -350,6 +353,7 @@
 				807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */,
 				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,
 				80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */,
+				8024FA8B25C08FA500F2B072 /* MainTabViewController.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
 				80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */,
 				80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */,
