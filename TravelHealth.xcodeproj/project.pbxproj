@@ -12,6 +12,7 @@
 		8024FA8B25C08FA500F2B072 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */; };
 		8024FA8D25C0932300F2B072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8024FA8C25C0932300F2B072 /* GoogleService-Info.plist */; };
 		80257D0E25B6972A0022E19E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80257D0D25B6972A0022E19E /* MapViewController.swift */; };
+		804518EC25CA0DCF003EEC50 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804518EB25CA0DCF003EEC50 /* LogIn.storyboard */; };
 		80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB525A185E40074A8A4 /* AppDelegate.swift */; };
 		80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB725A185E40074A8A4 /* SceneDelegate.swift */; };
 		80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB925A185E40074A8A4 /* ImmunizationController.swift */; };
@@ -46,6 +47,7 @@
 		8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		8024FA8C25C0932300F2B072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80257D0D25B6972A0022E19E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		804518EB25CA0DCF003EEC50 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		80465AB225A185E40074A8A4 /* TravelHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465AB525A185E40074A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80465AB725A185E40074A8A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
 				807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */,
+				804518EB25CA0DCF003EEC50 /* LogIn.storyboard */,
 				80EA99E725C7A95A00483043 /* MedCell.swift */,
 				80EA99EB25C7A9CC00483043 /* MedCell.xib */,
 				8024FA8A25C08FA500F2B072 /* MainTabViewController.swift */,
@@ -273,6 +276,7 @@
 				80EA99EC25C7A9CC00483043 /* MedCell.xib in Resources */,
 				8024FA8D25C0932300F2B072 /* GoogleService-Info.plist in Resources */,
 				80465ABF25A185E50074A8A4 /* Assets.xcassets in Resources */,
+				804518EC25CA0DCF003EEC50 /* LogIn.storyboard in Resources */,
 				80465ABD25A185E40074A8A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
