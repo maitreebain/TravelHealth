@@ -42,27 +42,33 @@ class LogInViewController: UIViewController {
         switch account {
             
         case .existingUser:
-            authService.signExistingUser(email: email, password: password) { (result) in
+            authService.signExistingUser(email: email, password: password) { [weak self] (result) in
                 
                 switch result {
                 case .failure(let error):
                     print(error)
                     //show alert here
+                    DispatchQueue.main.async {
+                        self?.showAlert(title: "Error signing in", message: "\(error)")
+                    }
                 case .success:
                     //navigate
-                    self.navigateToMainView()
+                    self?.navigateToMainView()
                 }
             }
         case .newUser:
-            authService.createNewUser(email: email, password: password) { (result) in
+            authService.createNewUser(email: email, password: password) { [weak self] (result) in
                 
                 switch result {
                 case .failure(let error):
                     print(error)
                     //show alert here
+                    DispatchQueue.main.async {
+                        self?.showAlert(title: "Error signing in", message: "\(error)")
+                    }
                 case .success:
                     //navigate
-                    self.navigateToMainView()
+                    self?.navigateToMainView()
                 }
             }
         }
