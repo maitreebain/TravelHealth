@@ -31,6 +31,7 @@
 		80F9CC4025CB23AB00214815 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */; };
 		80F9CC4325CB25C400214815 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4225CB25C400214815 /* Navigation.swift */; };
 		80F9CC4625CB441B00214815 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4525CB441B00214815 /* ShowAlert.swift */; };
+		80F9CC4825CB479300214815 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4725CB479300214815 /* CovidModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		80F9CC4225CB25C400214815 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		80F9CC4525CB441B00214815 /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
+		80F9CC4725CB479300214815 /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
 		B814185B6F04F6A3E452CB59 /* Pods-TravelHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealth.release.xcconfig"; path = "Target Support Files/Pods-TravelHealth/Pods-TravelHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FFE5CBECF16E8CAB74382840 /* Pods_TravelHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		807F3F6F25BFADA700DCE9FA /* CovidSection */ = {
 			isa = PBXGroup;
 			children = (
+				80F9CC4725CB479300214815 /* CovidModel.swift */,
 				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
 				80257D0D25B6972A0022E19E /* MapViewController.swift */,
 			);
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */,
+				80F9CC4825CB479300214815 /* CovidModel.swift in Sources */,
 				80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */,
 				807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */,
 				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,

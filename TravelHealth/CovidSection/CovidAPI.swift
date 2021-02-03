@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+//func fetchCOVIDAPI(completion: @escaping (Result<[]> -> ()) {
+//    
+//}
