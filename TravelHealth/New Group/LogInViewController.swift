@@ -18,7 +18,8 @@ class LogInViewController: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
-    @IBOutlet var signInButton: UIButton!
+    @IBOutlet var SignInButton: UIButton!
+    @IBOutlet var signUpButton: UIButton!
     @IBOutlet var promptLabel: UILabel!
     
     private var account: AccountState = .existingUser
@@ -67,6 +68,24 @@ class LogInViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        
+        account = account == .existingUser ? .newUser : .existingUser
+        
+        switch account {
+        case .existingUser:
+            SignInButton.setTitle("Sign In", for: .normal)
+            //add label text here
+            signUpButton.setTitle("Sign Up", for: .normal)
+        case .newUser:
+            SignInButton.setTitle("Sign Up", for: .normal)
+            //add label text here
+            signUpButton.setTitle("Sign In", for: .normal)
+        }
+        
+    }
+    
     
     
 }
