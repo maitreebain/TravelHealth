@@ -22,6 +22,7 @@ class LogInViewController: UIViewController {
     @IBOutlet var promptLabel: UILabel!
     
     private var account: AccountState = .existingUser
+    private var authService = AuthenticationSession()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +38,33 @@ class LogInViewController: UIViewController {
             return
         }
         
-//        switch account {
-//        case .existingUser:
-//            
-//        case .newUser:
-//            
-//        }
+        switch account {
+            
+        case .existingUser:
+            authService.signExistingUser(email: email, password: password) { (result) in
+                
+                switch result {
+                case .failure(let error):
+                    print(error)
+                    //show alert here
+                case .success:
+                    //navigate
+                    self.navigateToMainView()
+                }
+            }
+        case .newUser:
+            authService.createNewUser(email: email, password: password) { (result) in
+                
+                switch result {
+                case .failure(let error):
+                    print(error)
+                    //show alert here
+                case .success:
+                    //navigate
+                    self.navigateToMainView()
+                }
+            }
+        }
         
     }
     
@@ -57,4 +79,9 @@ extension LogInViewController: UITextFieldDelegate {
 
 extension LogInViewController {
     //navigate to views here
+    
+    func navigateToMainView() {
+        UIViewController.showViewController(storyboardName: "Main", viewControllerID: "MainTabViewController")
+    }
+    
 }

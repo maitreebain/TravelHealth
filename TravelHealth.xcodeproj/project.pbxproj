@@ -29,6 +29,7 @@
 		80EA99EC25C7A9CC00483043 /* MedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EA99EB25C7A9CC00483043 /* MedCell.xib */; };
 		80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC3D25CB239800214815 /* DatabaseService.swift */; };
 		80F9CC4025CB23AB00214815 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */; };
+		80F9CC4325CB25C400214815 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4225CB25C400214815 /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		80EA99EB25C7A9CC00483043 /* MedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedCell.xib; sourceTree = "<group>"; };
 		80F9CC3D25CB239800214815 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		80F9CC4225CB25C400214815 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		B814185B6F04F6A3E452CB59 /* Pods-TravelHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealth.release.xcconfig"; path = "Target Support Files/Pods-TravelHealth/Pods-TravelHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FFE5CBECF16E8CAB74382840 /* Pods_TravelHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
 				80F9CC4125CB23B600214815 /* Services */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
+				80F9CC4225CB25C400214815 /* Navigation.swift */,
 				8089CED425CB1E7A0058158E /* New Group */,
 				80EA99E725C7A95A00483043 /* MedCell.swift */,
 				80EA99EB25C7A9CC00483043 /* MedCell.xib */,
@@ -390,6 +393,7 @@
 				80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
 				80EA99E825C7A95A00483043 /* MedCell.swift in Sources */,
+				80F9CC4325CB25C400214815 /* Navigation.swift in Sources */,
 				80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */,
 				80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */,
 				80F9CC4025CB23AB00214815 /* AuthenticationService.swift in Sources */,
