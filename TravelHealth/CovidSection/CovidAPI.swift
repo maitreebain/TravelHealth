@@ -8,6 +8,6 @@
 
 import Foundation
 
-//func fetchCOVIDAPI(completion: @escaping (Result<[]> -> ()) {
+//func fetchCOVIDAPI(completion: @escaping (Result<> -> ()) {
 //    
 //}

@@ -8,3 +8,9 @@
 
 import Foundation
 
+struct Item {
+    let name: String
+    let addedDate: String
+    let expirationDate: String
+    let dose: Int?
+}
