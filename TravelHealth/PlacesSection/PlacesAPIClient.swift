@@ -10,7 +10,7 @@ import Foundation
 import NetworkHelper
 
 struct PlacesAPIClient {
-    static func getPlaces(completion: @escaping (Result <Place, AppError>) -> ()) {
+    static func getPlaces(completion: @escaping (Result <[Place], AppError>) -> ()) {
         
         let endpoint = "https://restcountries.eu/rest/v2/"
         guard let url = URL(string: endpoint) else {
@@ -28,7 +28,7 @@ struct PlacesAPIClient {
                 completion(.failure(.networkClientError(appError)))
             case .success(let data):
                 do {
-                    let place = try JSONDecoder().decode(Place.self, from: data)
+                    let place = try JSONDecoder().decode([Place].self, from: data)
                     //only gets one place
                     completion(.success(place))
                 } catch {
