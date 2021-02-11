@@ -17,7 +17,14 @@ class TravelHealthTests: XCTestCase {
      -
      */
     
-    
+    func testCovidAPIClient() {
+        
     }
+    
+    func testPlacesAPIClient() {
+        
+    }
+    
+
 
 }

@@ -1,19 +1,18 @@
 //
-//  CovidAPI.swift
+//  PlacesAPIClient.swift
 //  TravelHealth
 //
-//  Created by Maitree Bain on 1/12/21.
+//  Created by Maitree Bain on 2/11/21.
 //  Copyright © 2021 Maitree Bain. All rights reserved.
 //
 
 import Foundation
 import NetworkHelper
 
-struct CovidAPIClient {
-    static func fetchCOVIDAPI(completion: @escaping (Result<[Countries], AppError>) -> ()) {
+struct PlacesAPIClient {
+    static func getPlaces(completion: @escaping (Result <Place, AppError>) -> ()) {
         
-        let endpoint = "https://api.covid19api.com/summary"
-        
+        let endpoint = "https://restcountries.eu/rest/v2/"
         guard let url = URL(string: endpoint) else {
             completion(.failure(.badURL(endpoint)))
             return
@@ -29,13 +28,13 @@ struct CovidAPIClient {
                 completion(.failure(.networkClientError(appError)))
             case .success(let data):
                 do {
-                    let countries = try JSONDecoder().decode(CovidData.self, from: data)
-                    completion(.success(countries.countries))
+                    let place = try JSONDecoder().decode(Place.self, from: data)
+                    //only gets one place
+                    completion(.success(place))
                 } catch {
                     completion(.failure(.decodingError(error)))
                 }
             }
         }
     }
-    
 }

@@ -8,12 +8,16 @@
 
 import Foundation
 
-struct CovidData {
+struct CovidData: Decodable {
+    let countries: [Countries]
+    //string but need to convert to date type, use computed property
+}
+
+struct Countries: Decodable {
     let country: String
     let newConfirmed: Int
     let totalConfirmed: Int
     let totalDeaths: Int
     let totalRecovered: Int
     let date: String
-    //string but need to convert to date type, use computed property
 }
