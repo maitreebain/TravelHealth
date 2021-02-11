@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
+import FirebaseAuth
+
+
+class DatabaseService {
+    
+    static let shared = DatabaseService()
+    private let db = Firestore.firestore()
+    
+    func createItem() {
+        
+    }
+    
+}

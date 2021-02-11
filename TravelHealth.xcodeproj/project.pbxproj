@@ -15,7 +15,7 @@
 		804518EC25CA0DCF003EEC50 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804518EB25CA0DCF003EEC50 /* LogIn.storyboard */; };
 		80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB525A185E40074A8A4 /* AppDelegate.swift */; };
 		80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB725A185E40074A8A4 /* SceneDelegate.swift */; };
-		80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB925A185E40074A8A4 /* ImmunizationController.swift */; };
+		80465ABA25A185E40074A8A4 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80465AB925A185E40074A8A4 /* ItemsController.swift */; };
 		80465ABD25A185E40074A8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80465ABB25A185E40074A8A4 /* Main.storyboard */; };
 		80465ABF25A185E50074A8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80465ABE25A185E50074A8A4 /* Assets.xcassets */; };
 		80465AC225A185E50074A8A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80465AC025A185E50074A8A4 /* LaunchScreen.storyboard */; };
@@ -23,12 +23,17 @@
 		807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */; };
 		807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7425BFAE9000DCE9FA /* EditViewController.swift */; };
 		807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */; };
+		808B2D4C25D58B96001ADFC0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B2D4B25D58B96001ADFC0 /* APIClient.swift */; };
 		80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1225AEAF980085CE44 /* CovidAPI.swift */; };
-		80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */; };
+		80969B1525AEAFA20085CE44 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ItemModel.swift */; };
+		80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E41025D0774D00A8C93D /* PlacesModel.swift */; };
 		80EA99E825C7A95A00483043 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EA99E725C7A95A00483043 /* MedCell.swift */; };
 		80EA99EC25C7A9CC00483043 /* MedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EA99EB25C7A9CC00483043 /* MedCell.xib */; };
 		80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC3D25CB239800214815 /* DatabaseService.swift */; };
 		80F9CC4025CB23AB00214815 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */; };
+		80F9CC4325CB25C400214815 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4225CB25C400214815 /* Navigation.swift */; };
+		80F9CC4625CB441B00214815 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4525CB441B00214815 /* ShowAlert.swift */; };
+		80F9CC4825CB479300214815 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4725CB479300214815 /* CovidModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +58,7 @@
 		80465AB225A185E40074A8A4 /* TravelHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80465AB525A185E40074A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80465AB725A185E40074A8A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80465AB925A185E40074A8A4 /* ImmunizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationController.swift; sourceTree = "<group>"; };
+		80465AB925A185E40074A8A4 /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
 		80465ABC25A185E40074A8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80465ABE25A185E50074A8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80465AC125A185E50074A8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,12 +69,17 @@
 		807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		807F3F7425BFAE9000DCE9FA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		808B2D4B25D58B96001ADFC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		80969B1225AEAF980085CE44 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
-		80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationAPI.swift; sourceTree = "<group>"; };
+		80969B1425AEAFA10085CE44 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		80D8E41025D0774D00A8C93D /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
 		80EA99E725C7A95A00483043 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		80EA99EB25C7A9CC00483043 /* MedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedCell.xib; sourceTree = "<group>"; };
 		80F9CC3D25CB239800214815 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		80F9CC4225CB25C400214815 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		80F9CC4525CB441B00214815 /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
+		80F9CC4725CB479300214815 /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
 		B814185B6F04F6A3E452CB59 /* Pods-TravelHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealth.release.xcconfig"; path = "Target Support Files/Pods-TravelHealth/Pods-TravelHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FFE5CBECF16E8CAB74382840 /* Pods_TravelHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,7 +133,9 @@
 				15B22BEC0AAF044FDD83A3AA /* Pods */,
 				371A227AFDCED2181B5F4077 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		80465AB325A185E40074A8A4 /* Products */ = {
 			isa = PBXGroup;
@@ -139,8 +151,10 @@
 			children = (
 				80465AB525A185E40074A8A4 /* AppDelegate.swift */,
 				80465AB725A185E40074A8A4 /* SceneDelegate.swift */,
+				80F9CC4425CB43F500214815 /* Extensions */,
 				80F9CC4125CB23B600214815 /* Services */,
 				80465ABB25A185E40074A8A4 /* Main.storyboard */,
+				80F9CC4225CB25C400214815 /* Navigation.swift */,
 				8089CED425CB1E7A0058158E /* New Group */,
 				80EA99E725C7A95A00483043 /* MedCell.swift */,
 				80EA99EB25C7A9CC00483043 /* MedCell.xib */,
@@ -168,6 +182,7 @@
 		807F3F6F25BFADA700DCE9FA /* CovidSection */ = {
 			isa = PBXGroup;
 			children = (
+				80F9CC4725CB479300214815 /* CovidModel.swift */,
 				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
 				80257D0D25B6972A0022E19E /* MapViewController.swift */,
 			);
@@ -177,8 +192,8 @@
 		807F3F7225BFAE5000DCE9FA /* ImmunizationSection */ = {
 			isa = PBXGroup;
 			children = (
-				80969B1425AEAFA10085CE44 /* ImmunizationAPI.swift */,
-				80465AB925A185E40074A8A4 /* ImmunizationController.swift */,
+				80969B1425AEAFA10085CE44 /* ItemModel.swift */,
+				80465AB925A185E40074A8A4 /* ItemsController.swift */,
 				807F3F7425BFAE9000DCE9FA /* EditViewController.swift */,
 			);
 			path = ImmunizationSection;
@@ -188,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */,
+				80D8E41025D0774D00A8C93D /* PlacesModel.swift */,
+				808B2D4B25D58B96001ADFC0 /* APIClient.swift */,
 			);
 			path = PlacesSection;
 			sourceTree = "<group>";
@@ -210,6 +227,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		80F9CC4425CB43F500214815 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80F9CC4525CB441B00214815 /* ShowAlert.swift */,
+			);
+			name = Extensions;
+			path = Services/Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +254,8 @@
 			dependencies = (
 			);
 			name = TravelHealth;
+			packageProductDependencies = (
+			);
 			productName = TravelHealth;
 			productReference = 80465AB225A185E40074A8A4 /* TravelHealth.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +307,8 @@
 				Base,
 			);
 			mainGroup = 80465AA925A185E40074A8A4;
+			packageReferences = (
+			);
 			productRefGroup = 80465AB325A185E40074A8A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,15 +412,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */,
+				80F9CC4825CB479300214815 /* CovidModel.swift in Sources */,
 				80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */,
 				807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */,
 				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,
-				80465ABA25A185E40074A8A4 /* ImmunizationController.swift in Sources */,
+				80465ABA25A185E40074A8A4 /* ItemsController.swift in Sources */,
 				8024FA8B25C08FA500F2B072 /* MainTabViewController.swift in Sources */,
+				808B2D4C25D58B96001ADFC0 /* APIClient.swift in Sources */,
+				80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */,
 				80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
 				80EA99E825C7A95A00483043 /* MedCell.swift in Sources */,
-				80969B1525AEAFA20085CE44 /* ImmunizationAPI.swift in Sources */,
+				80F9CC4325CB25C400214815 /* Navigation.swift in Sources */,
+				80F9CC4625CB441B00214815 /* ShowAlert.swift in Sources */,
+				80969B1525AEAFA20085CE44 /* ItemModel.swift in Sources */,
 				80465AB825A185E40074A8A4 /* SceneDelegate.swift in Sources */,
 				80F9CC4025CB23AB00214815 /* AuthenticationService.swift in Sources */,
 				80257D0E25B6972A0022E19E /* MapViewController.swift in Sources */,

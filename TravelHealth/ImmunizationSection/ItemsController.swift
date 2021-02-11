@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImmunizationController: UIViewController {
+class ItemsViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
@@ -22,7 +22,7 @@ class ImmunizationController: UIViewController {
 
 }
 
-extension ImmunizationController: UITableViewDataSource {
+extension ItemsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
@@ -33,14 +33,13 @@ extension ImmunizationController: UITableViewDataSource {
             fatalError("could not dequeue cell")
         }
         
-        
-        
         return cell
     }
     
     
 }
 
-extension ImmunizationController: UITableViewDelegate {
+extension ItemsViewController: UITableViewDelegate {
+    
     
 }
