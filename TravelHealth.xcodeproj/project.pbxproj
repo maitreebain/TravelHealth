@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,8 +23,7 @@
 		807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */; };
 		807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7425BFAE9000DCE9FA /* EditViewController.swift */; };
 		807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */; };
-		808B2D4C25D58B96001ADFC0 /* PlacesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B2D4B25D58B96001ADFC0 /* PlacesAPIClient.swift */; };
-		808B2D4F25D58EF5001ADFC0 /* NetworkHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 808B2D4E25D58EF5001ADFC0 /* NetworkHelper */; };
+		808B2D4C25D58B96001ADFC0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B2D4B25D58B96001ADFC0 /* APIClient.swift */; };
 		80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1225AEAF980085CE44 /* CovidAPI.swift */; };
 		80969B1525AEAFA20085CE44 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ItemModel.swift */; };
 		80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E41025D0774D00A8C93D /* PlacesModel.swift */; };
@@ -70,7 +69,7 @@
 		807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		807F3F7425BFAE9000DCE9FA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		808B2D4B25D58B96001ADFC0 /* PlacesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIClient.swift; sourceTree = "<group>"; };
+		808B2D4B25D58B96001ADFC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		80969B1225AEAF980085CE44 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
 		80969B1425AEAFA10085CE44 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		80D8E41025D0774D00A8C93D /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
@@ -91,7 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E4D7BEBEE30746FE0841869 /* Pods_TravelHealth.framework in Frameworks */,
-				808B2D4F25D58EF5001ADFC0 /* NetworkHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +133,9 @@
 				15B22BEC0AAF044FDD83A3AA /* Pods */,
 				371A227AFDCED2181B5F4077 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		80465AB325A185E40074A8A4 /* Products */ = {
 			isa = PBXGroup;
@@ -204,7 +204,7 @@
 			children = (
 				807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */,
 				80D8E41025D0774D00A8C93D /* PlacesModel.swift */,
-				808B2D4B25D58B96001ADFC0 /* PlacesAPIClient.swift */,
+				808B2D4B25D58B96001ADFC0 /* APIClient.swift */,
 			);
 			path = PlacesSection;
 			sourceTree = "<group>";
@@ -255,7 +255,6 @@
 			);
 			name = TravelHealth;
 			packageProductDependencies = (
-				808B2D4E25D58EF5001ADFC0 /* NetworkHelper */,
 			);
 			productName = TravelHealth;
 			productReference = 80465AB225A185E40074A8A4 /* TravelHealth.app */;
@@ -309,7 +308,6 @@
 			);
 			mainGroup = 80465AA925A185E40074A8A4;
 			packageReferences = (
-				808B2D4D25D58EF5001ADFC0 /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */,
 			);
 			productRefGroup = 80465AB325A185E40074A8A4 /* Products */;
 			projectDirPath = "";
@@ -420,7 +418,7 @@
 				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,
 				80465ABA25A185E40074A8A4 /* ItemsController.swift in Sources */,
 				8024FA8B25C08FA500F2B072 /* MainTabViewController.swift in Sources */,
-				808B2D4C25D58B96001ADFC0 /* PlacesAPIClient.swift in Sources */,
+				808B2D4C25D58B96001ADFC0 /* APIClient.swift in Sources */,
 				80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */,
 				80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
@@ -701,25 +699,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		808B2D4D25D58EF5001ADFC0 /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alexpaul/NetworkHelperSPM";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		808B2D4E25D58EF5001ADFC0 /* NetworkHelper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 808B2D4D25D58EF5001ADFC0 /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */;
-			productName = NetworkHelper;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80465AAA25A185E40074A8A4 /* Project object */;
 }
