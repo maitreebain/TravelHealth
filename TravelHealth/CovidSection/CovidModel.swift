@@ -11,6 +11,10 @@ import Foundation
 struct CovidData: Decodable {
     let countries: [Countries]
     //string but need to convert to date type, use computed property
+    
+    enum CodingKeys: String, CodingKey {
+        case countries = "Countries"
+    }
 }
 
 struct Countries: Decodable {
@@ -20,4 +24,13 @@ struct Countries: Decodable {
     let totalDeaths: Int
     let totalRecovered: Int
     let date: String
+    
+    enum CodingKeys: String, CodingKey {
+        case country = "Country"
+        case newConfirmed = "NewConfirmed"
+        case totalConfirmed = "TotalConfirmed"
+        case totalDeaths = "TotalDeaths"
+        case totalRecovered = "TotalRecovered"
+        case date = "Date"
+    }
 }

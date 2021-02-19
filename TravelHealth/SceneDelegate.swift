@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 let firebase: FirebaseClient = .live
+let apiClient: APIClient = .live
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

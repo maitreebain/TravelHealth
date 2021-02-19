@@ -47,7 +47,7 @@
         <!--Main Tab View Controller-->
         <scene sceneID="R4a-Sf-RTE">
             <objects>
-                <tabBarController id="FIf-Xc-ks1" customClass="MainTabViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabViewController" id="FIf-Xc-ks1" customClass="MainTabViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AFP-Tq-enA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
