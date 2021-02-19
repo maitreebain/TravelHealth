@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 
+let firebase: FirebaseClient = .live
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -19,12 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
+
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-        if let _ = Auth.auth().currentUser {
+        if let _ = firebase.currentUser() {
             UIViewController.showViewController(storyboardName: "Main", viewControllerID: "MainTabViewController")
         } else {
             UIViewController.showViewController(storyboardName: "LogIn", viewControllerID: "LogInViewController")

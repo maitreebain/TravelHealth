@@ -34,6 +34,7 @@
 		80F9CC4325CB25C400214815 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4225CB25C400214815 /* Navigation.swift */; };
 		80F9CC4625CB441B00214815 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4525CB441B00214815 /* ShowAlert.swift */; };
 		80F9CC4825CB479300214815 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9CC4725CB479300214815 /* CovidModel.swift */; };
+		CA5D07B925E02342007BCEC5 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D07B825E02342007BCEC5 /* FirebaseClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		80F9CC4525CB441B00214815 /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
 		80F9CC4725CB479300214815 /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
 		B814185B6F04F6A3E452CB59 /* Pods-TravelHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelHealth.release.xcconfig"; path = "Target Support Files/Pods-TravelHealth/Pods-TravelHealth.release.xcconfig"; sourceTree = "<group>"; };
+		CA5D07B825E02342007BCEC5 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		FFE5CBECF16E8CAB74382840 /* Pods_TravelHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,7 +206,6 @@
 			children = (
 				807F3F7025BFAE4800DCE9FA /* PlacesViewController.swift */,
 				80D8E41025D0774D00A8C93D /* PlacesModel.swift */,
-				808B2D4B25D58B96001ADFC0 /* APIClient.swift */,
 			);
 			path = PlacesSection;
 			sourceTree = "<group>";
@@ -221,7 +222,9 @@
 		80F9CC4125CB23B600214815 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CA5D07B825E02342007BCEC5 /* FirebaseClient.swift */,
 				80F9CC3F25CB23AB00214815 /* AuthenticationService.swift */,
+				808B2D4B25D58B96001ADFC0 /* APIClient.swift */,
 				80F9CC3D25CB239800214815 /* DatabaseService.swift */,
 			);
 			path = Services;
@@ -421,6 +424,7 @@
 				80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */,
 				80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
+				CA5D07B925E02342007BCEC5 /* FirebaseClient.swift in Sources */,
 				80C39FFA25E014EC000ED9AE /* DataViewController.swift in Sources */,
 				80EA99E825C7A95A00483043 /* MedCell.swift in Sources */,
 				80F9CC4325CB25C400214815 /* Navigation.swift in Sources */,
