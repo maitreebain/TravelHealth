@@ -12,7 +12,7 @@
         <!--Files-->
         <scene sceneID="9dU-sc-4xJ">
             <objects>
-                <viewController id="vSx-p3-RRE" sceneMemberID="viewController">
+                <viewController id="vSx-p3-RRE" customClass="DataViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYs-7Q-UUW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +228,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descripText" destination="mdI-nZ-SNe" id="S6V-lI-QgB"/>
+                        <outlet property="doseTextField" destination="A1L-Sl-Eek" id="5A2-Em-UZp"/>
                         <outlet property="nameTextField" destination="r5H-Uq-IFg" id="9Vk-XE-SHE"/>
                     </connections>
                 </viewController>

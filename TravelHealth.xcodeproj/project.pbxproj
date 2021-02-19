@@ -24,8 +24,8 @@
 		807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7425BFAE9000DCE9FA /* EditViewController.swift */; };
 		807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */; };
 		808B2D4C25D58B96001ADFC0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B2D4B25D58B96001ADFC0 /* APIClient.swift */; };
-		80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1225AEAF980085CE44 /* CovidAPI.swift */; };
 		80969B1525AEAFA20085CE44 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80969B1425AEAFA10085CE44 /* ItemModel.swift */; };
+		80C39FFA25E014EC000ED9AE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C39FF925E014EC000ED9AE /* DataViewController.swift */; };
 		80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8E41025D0774D00A8C93D /* PlacesModel.swift */; };
 		80EA99E825C7A95A00483043 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EA99E725C7A95A00483043 /* MedCell.swift */; };
 		80EA99EC25C7A9CC00483043 /* MedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EA99EB25C7A9CC00483043 /* MedCell.xib */; };
@@ -70,8 +70,8 @@
 		807F3F7425BFAE9000DCE9FA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		807F3F7625BFB13B00DCE9FA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		808B2D4B25D58B96001ADFC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		80969B1225AEAF980085CE44 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
 		80969B1425AEAFA10085CE44 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		80C39FF925E014EC000ED9AE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		80D8E41025D0774D00A8C93D /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
 		80EA99E725C7A95A00483043 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		80EA99EB25C7A9CC00483043 /* MedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedCell.xib; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				80F9CC4725CB479300214815 /* CovidModel.swift */,
-				80969B1225AEAF980085CE44 /* CovidAPI.swift */,
+				80C39FF925E014EC000ED9AE /* DataViewController.swift */,
 				80257D0D25B6972A0022E19E /* MapViewController.swift */,
 			);
 			path = CovidSection;
@@ -413,7 +413,6 @@
 			files = (
 				807F3F7525BFAE9000DCE9FA /* EditViewController.swift in Sources */,
 				80F9CC4825CB479300214815 /* CovidModel.swift in Sources */,
-				80969B1325AEAF980085CE44 /* CovidAPI.swift in Sources */,
 				807F3F7725BFB13B00DCE9FA /* LogInViewController.swift in Sources */,
 				807F3F7125BFAE4800DCE9FA /* PlacesViewController.swift in Sources */,
 				80465ABA25A185E40074A8A4 /* ItemsController.swift in Sources */,
@@ -422,6 +421,7 @@
 				80D8E41125D0774D00A8C93D /* PlacesModel.swift in Sources */,
 				80F9CC3E25CB239800214815 /* DatabaseService.swift in Sources */,
 				80465AB625A185E40074A8A4 /* AppDelegate.swift in Sources */,
+				80C39FFA25E014EC000ED9AE /* DataViewController.swift in Sources */,
 				80EA99E825C7A95A00483043 /* MedCell.swift in Sources */,
 				80F9CC4325CB25C400214815 /* Navigation.swift in Sources */,
 				80F9CC4625CB441B00214815 /* ShowAlert.swift in Sources */,

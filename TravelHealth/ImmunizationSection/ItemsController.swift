@@ -19,7 +19,6 @@ class ItemsViewController: UIViewController {
         tableView.dataSource = self
     }
 
-
 }
 
 extension ItemsViewController: UITableViewDataSource {
