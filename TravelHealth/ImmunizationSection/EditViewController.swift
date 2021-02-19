@@ -10,6 +10,9 @@ import UIKit
 
 class EditViewController: UIViewController {
 
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var doseTextField : UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

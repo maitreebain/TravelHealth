@@ -154,56 +154,69 @@
             </objects>
             <point key="canvasLocation" x="-242.0289855072464" y="-673.66071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="gUc-pq-9Se">
             <objects>
-                <viewController id="qSk-Oh-yqL" sceneMemberID="viewController">
+                <viewController id="qSk-Oh-yqL" customClass="EditViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9w-te-Gex">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-Uq-IFg">
-                                <rect key="frame" x="20" y="112.5" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRv-fc-ADc">
-                                <rect key="frame" x="20" y="72" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG9-MC-UEh">
+                                <rect key="frame" x="20" y="96" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imv-IT-2MO">
-                                <rect key="frame" x="20" y="172.5" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c18-Gk-rqt">
-                                <rect key="frame" x="20" y="219" width="374" height="252.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tn3-b6-ZX5">
+                                <rect key="frame" x="20" y="176.5" width="374" height="252.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRv-fc-ADc">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-Uq-IFg">
+                                        <rect key="frame" x="0.0" y="45.5" width="374" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imv-IT-2MO">
+                                        <rect key="frame" x="0.0" y="91" width="374" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1L-Sl-Eek">
+                                        <rect key="frame" x="0.0" y="136.5" width="374" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-eK-l1y">
+                                        <rect key="frame" x="0.0" y="181.5" width="374" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdI-nZ-SNe">
+                                        <rect key="frame" x="0.0" y="227" width="374" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IKf-j6-46s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IKf-j6-46s" firstAttribute="trailing" secondItem="r5H-Uq-IFg" secondAttribute="trailing" constant="20" id="1CD-bV-ehl"/>
-                            <constraint firstItem="TRv-fc-ADc" firstAttribute="top" secondItem="IKf-j6-46s" secondAttribute="top" constant="16" id="3Ol-bX-R8c"/>
-                            <constraint firstItem="c18-Gk-rqt" firstAttribute="height" secondItem="D9w-te-Gex" secondAttribute="height" multiplier="0.3" id="4Wh-aM-EJr"/>
-                            <constraint firstItem="Imv-IT-2MO" firstAttribute="leading" secondItem="r5H-Uq-IFg" secondAttribute="leading" id="AQ7-bW-hjd"/>
-                            <constraint firstItem="IKf-j6-46s" firstAttribute="trailing" secondItem="TRv-fc-ADc" secondAttribute="trailing" constant="20" id="CEi-3r-0mc"/>
-                            <constraint firstItem="r5H-Uq-IFg" firstAttribute="top" secondItem="TRv-fc-ADc" secondAttribute="bottom" constant="20" id="Ip2-sy-1Gw"/>
-                            <constraint firstItem="Imv-IT-2MO" firstAttribute="trailing" secondItem="r5H-Uq-IFg" secondAttribute="trailing" id="aQD-dD-6ha"/>
-                            <constraint firstItem="Imv-IT-2MO" firstAttribute="top" secondItem="r5H-Uq-IFg" secondAttribute="bottom" constant="26" id="d1K-yS-mvb"/>
-                            <constraint firstItem="c18-Gk-rqt" firstAttribute="top" secondItem="Imv-IT-2MO" secondAttribute="bottom" constant="26" id="da8-UD-G4U"/>
-                            <constraint firstItem="c18-Gk-rqt" firstAttribute="leading" secondItem="IKf-j6-46s" secondAttribute="leading" constant="20" id="naC-o0-Hxq"/>
-                            <constraint firstItem="TRv-fc-ADc" firstAttribute="leading" secondItem="IKf-j6-46s" secondAttribute="leading" constant="20" id="oP1-l1-TF4"/>
-                            <constraint firstItem="IKf-j6-46s" firstAttribute="trailing" secondItem="c18-Gk-rqt" secondAttribute="trailing" constant="20" id="rqP-38-CZr"/>
-                            <constraint firstItem="r5H-Uq-IFg" firstAttribute="leading" secondItem="IKf-j6-46s" secondAttribute="leading" constant="20" id="uT1-1d-OY8"/>
+                            <constraint firstItem="BG9-MC-UEh" firstAttribute="top" secondItem="IKf-j6-46s" secondAttribute="top" constant="40" id="4El-eE-5vp"/>
+                            <constraint firstItem="BG9-MC-UEh" firstAttribute="leading" secondItem="IKf-j6-46s" secondAttribute="leading" constant="20" id="P5y-sI-8G8"/>
+                            <constraint firstItem="Tn3-b6-ZX5" firstAttribute="leading" secondItem="IKf-j6-46s" secondAttribute="leading" constant="20" id="Skg-F6-0WQ"/>
+                            <constraint firstItem="Tn3-b6-ZX5" firstAttribute="height" secondItem="D9w-te-Gex" secondAttribute="height" multiplier="0.3" id="fQK-Vc-wEl"/>
+                            <constraint firstItem="Tn3-b6-ZX5" firstAttribute="top" secondItem="BG9-MC-UEh" secondAttribute="bottom" constant="60" id="gXK-3j-vC7"/>
+                            <constraint firstItem="IKf-j6-46s" firstAttribute="trailing" secondItem="Tn3-b6-ZX5" secondAttribute="trailing" constant="20" id="hhT-Us-n8m"/>
+                            <constraint firstItem="IKf-j6-46s" firstAttribute="trailing" secondItem="BG9-MC-UEh" secondAttribute="trailing" constant="20" id="tnO-sJ-1eU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zv0-qU-6L7">
@@ -214,6 +227,9 @@
                             <color key="tintColor" systemColor="systemTealColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="r5H-Uq-IFg" id="9Vk-XE-SHE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPu-3X-CDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,9 +259,6 @@
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="x.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
