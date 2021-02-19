@@ -28,7 +28,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             UIViewController.showViewController(storyboardName: "Main", viewControllerID: "MainTabViewController")
         } else {
             UIViewController.showViewController(storyboardName: "LogIn", viewControllerID: "LogInViewController")
-
         }
         window?.makeKeyAndVisible()
     }

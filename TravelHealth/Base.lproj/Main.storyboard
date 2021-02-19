@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Files-->
-        <scene sceneID="9dU-sc-4xJ">
-            <objects>
-                <viewController id="vSx-p3-RRE" customClass="DataViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LYs-7Q-UUW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rCM-fH-OZM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Files" image="folder.fill" catalog="system" id="ETt-SR-ij4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YTv-eo-eTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-242" y="3"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="6qI-ZQ-k8M">
             <objects>
@@ -72,12 +56,50 @@
                     <connections>
                         <segue destination="CCg-va-tB9" kind="relationship" relationship="viewControllers" id="MXv-BL-WFt"/>
                         <segue destination="qxe-9z-Qz0" kind="relationship" relationship="viewControllers" id="g2C-ki-3dX"/>
-                        <segue destination="vSx-p3-RRE" kind="relationship" relationship="viewControllers" id="7ys-Sm-8wj"/>
+                        <segue destination="N9F-8g-gm2" kind="relationship" relationship="viewControllers" id="sb1-A3-xCi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gQ-5p-xA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1162" y="-349"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="HBt-ci-J7I">
+            <objects>
+                <tableViewController id="N9F-8g-gm2" customClass="DataViewController" customModule="TravelHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p6P-Uh-Ehd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataCell" textLabel="zkz-uW-gcQ" rowHeight="53" style="IBUITableViewCellStyleDefault" id="NA6-0V-Po7">
+                                <rect key="frame" x="0.0" y="28" width="414" height="53"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NA6-0V-Po7" id="0ju-T7-iMI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zkz-uW-gcQ">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="53"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N9F-8g-gm2" id="f90-UB-m9q"/>
+                            <outlet property="delegate" destination="N9F-8g-gm2" id="HkO-ZQ-Hg7"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="NYj-fa-Z0d"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsU-Ll-O2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-224.63768115942031" y="88.392857142857139"/>
         </scene>
         <!--Items View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -258,7 +280,6 @@
     </scenes>
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
-        <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="x.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
