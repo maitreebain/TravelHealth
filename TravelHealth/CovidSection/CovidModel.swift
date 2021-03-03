@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CovidData: Decodable {
+struct CovidData: Decodable, Equatable {
     let countries: [Countries]
     //string but need to convert to date type, use computed property
     
@@ -17,7 +17,7 @@ struct CovidData: Decodable {
     }
 }
 
-struct Countries: Decodable {
+struct Countries: Decodable, Equatable {
     let country: String
     let newConfirmed: Int
     let totalConfirmed: Int

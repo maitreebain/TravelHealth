@@ -63,13 +63,7 @@ extension APIClient {
                 .success(
                     .init(
                         countries: [
-                            .init(
-                                country: "France",
-                                newConfirmed: 1_000,
-                                totalConfirmed: 100_000,
-                                totalDeaths: 20,
-                                totalRecovered: 50_000,
-                                date: "2021-02-11T17:53:53.007Z")
+                            .france
                         ]
                     )
                 )
@@ -77,4 +71,15 @@ extension APIClient {
         }
     )
     #endif
+}
+
+extension Countries {
+    static let france = Countries(
+        country: "France",
+        newConfirmed: 1_000,
+        totalConfirmed: 100_000,
+        totalDeaths: 20,
+        totalRecovered: 50_000,
+        date: "2021-02-11T17:53:53.007Z"
+    )
 }
