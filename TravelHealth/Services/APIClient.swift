@@ -13,18 +13,21 @@ struct APIClient {
     let fetchCOVID: (@escaping (Result<CovidData, Error>) -> Void) -> Void
 }
 
+//refactor to use generic urlsession class
 extension APIClient {
     static let live = APIClient(
         getPlaces: { completion in
             URLSession.shared.dataTask(with: URL(string: "https://restcountries.eu/rest/v2/")!) { data, _, error in
-                if let data = data {
-                    do {
-                        completion(.success(try JSONDecoder().decode([Place].self, from: data)))
-                    } catch {
+                DispatchQueue.main.async {
+                    if let data = data {
+                        do {
+                            completion(.success(try JSONDecoder().decode([Place].self, from: data)))
+                        } catch {
+                            completion(.failure(error))
+                        }
+                    } else if let error = error {
                         completion(.failure(error))
                     }
-                } else if let error = error {
-                    completion(.failure(error))
                 }
             }
             .resume()
@@ -44,7 +47,7 @@ extension APIClient {
             .resume()
         }
     )
-
+    
     #if DEBUG
     static let mock = APIClient(
         getPlaces: { completion in

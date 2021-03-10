@@ -38,6 +38,7 @@ class TravelHealthTests: XCTestCase {
     }
     
     func testCovidAPIClient() {
+        apiClient = .mock
         
     }
     
